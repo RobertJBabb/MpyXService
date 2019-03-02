@@ -13,7 +13,7 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024
 # Set the secret key to some random bytes. Change this!
-app.secret_key = b'T\x04\xeb\x95Rp\x85\xcfF\xbbp\xd1\xaa\xe4J\x9a'
+app.secret_key = b'Put your secret key here'
 
 @app.route('/')
 def base_redirect():

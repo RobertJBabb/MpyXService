@@ -31,11 +31,11 @@ Do you want to precompile your micropython modules? This small web service can h
 
 5. Run the server:<br>
 ```
-    To run the development server:<br>
-    $ export FLASK_APP=main<br>
+    To run the development server:
+    $ export FLASK_APP=main
     $ flask run
 
-    To run using gunicorn (better performance):<br>
+    To run using gunicorn (better performance):
     gunicorn -b :5000 main:app
 ```
 

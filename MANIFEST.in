@@ -1,0 +1,7 @@
+include main.py
+include README.txt
+include README.md
+recursive-include uploads *
+recursive-include templates *
+recursive-include static *
+global-exclude *.pyc

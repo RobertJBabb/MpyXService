@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block body %}
+<title>Micropython mpy_cross Service</title>
+<h2>Micropython mpy_cross Service</h2>
+<form method=post enctype=multipart/form-data>
+  <pre>
+  This service will run the MicroPython mpy_cross utility on submitted python source files.
+  You can optionally set mpy_cross options.
+  If no options are set mpy_cross default values are used.
+  You will be automatically prompted to save the mpy output file.
+  </pre>
+  <b>Emit:</b>
+  <select name="emit_select" size="1" autocomplete="off">
+    <option value="default" selected>Default</option>
+    <option value="bytecode">bytecode</option>
+    <option value="native">Native</option>
+    <option value="viper">Viper</option>
+  </select><br>
+  <input type="checkbox" name="NoUnicode" autocomplete="off"> No Unicode?<br>
+  <input type="checkbox" name="CacheBC" autocomplete="off"> Cache map lookups in bytecode?<br>
+  <input type="checkbox" name="SetIntBits" autocomplete="off"> Set Small Int bits?
+  <input name="SmallIntBits" type="number" min="8" max="64" value="8" autocomplete="off"><br>
+  <h2>Upload micropython File:</h2>
+  <input type=file name=file autocomplete="off">
+  <input type=submit value=Upload>
+</form>
+{% endblock %}

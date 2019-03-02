@@ -19,10 +19,10 @@ Do you want to precompile your micropython modules? This small web service can h
 1. Clone the repo
 
 2. Initialize and activate a virtualenv:<br/>
-<code>
-  $ python3 -m venv venv<br>
+```
+  $ python3 -m venv venv  
   $ . venv/bin/activate
-</code>
+```
 
 3. Install the dependencies:<br>
     ```
@@ -30,14 +30,14 @@ Do you want to precompile your micropython modules? This small web service can h
     ```
 
 5. Run the server:<br>
-    <code>
+```
     To run the development server:<br>
     $ export FLASK_APP=main<br>
     $ flask run
 
     To run using gunicorn (better performance):<br>
     gunicorn -b :5000 main:app
-    </code>
+```
 
 6. Navigate to [http://localhost:5000](http://localhost:5000)
 
